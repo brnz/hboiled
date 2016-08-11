@@ -578,15 +578,24 @@ body.nav-opened .site-wrapper {
 .left-middle-columns {
     width: 756px;
     float: left;
+    @media screen and (max-width: 900px) { 
+        width: 100%;
+        float: none;
+    }
+    // @media screen and (max-width: 500px) { }
 }
 
 .right-column {
     width: 120px;
     float: right;
+    @media screen and (max-width: 900px) {
+        width: 100%; 
+        float: none;
+    }
+    // @media screen and (max-width: 500px) { }
 }
 
-.sidebar {
-}
+// .sidebar { }
 
 /* Big cover image on the home page */
 .main-header {
