@@ -18,13 +18,20 @@
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
+<div class="sidebar-wrapper">
+
+    {{!-- sidebar content be here --}}
+    {{> sidebar}}
+
+</div>
+
 {{!-- The main content area on the homepage --}}
 <main id="content" class="content" role="main">
 
     {{!-- The tag below includes the post loop - partials/loop.hbs --}}
-    <div class="left-middle-columns">{{> "loop"}}</div>
-
-    {{!-- sidebar content be here --}}
-    <div class="right-column">{{sidebar}}</div>
+    {{> "loop"}}
 
 </main>
+
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}

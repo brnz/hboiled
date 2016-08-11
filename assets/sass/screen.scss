@@ -575,18 +575,17 @@ body.nav-opened .site-wrapper {
    4. General - The main styles for the the theme
    ========================================================================== */
 
-.left-middle-columns {
-    width: 756px;
-    float: left;
+.content {
+    max-width: 710px;
+    width: 71%;
     @media screen and (max-width: 900px) { 
         width: 100%;
-        float: none;
     }
     // @media screen and (max-width: 500px) { }
 }
 
-.right-column {
-    width: 120px;
+.sidebar-wrapper {
+    width: 29%;
     float: right;
     @media screen and (max-width: 900px) {
         width: 100%; 
@@ -595,7 +594,13 @@ body.nav-opened .site-wrapper {
     // @media screen and (max-width: 500px) { }
 }
 
-// .sidebar { }
+.sidebar {
+    padding-bottom: 4rem;
+    border-bottom: #EBF2F6 1px solid;
+    word-wrap: break-word;
+    // width: 23%;
+    margin: 0 4rem;
+}
 
 /* Big cover image on the home page */
 .main-header {
@@ -1013,13 +1018,16 @@ body.nav-opened .nav {
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
-    position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
+    // position: relative;
+    // width: 80%;
+    // max-width: 710px;
+    // margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
+
+    // width: 67%;
+    margin: 4rem;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
@@ -1733,6 +1741,8 @@ body:not(.post-template) .post-title {
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
+
+    max-height: 37px;
 }
 
 .site-footer a {
