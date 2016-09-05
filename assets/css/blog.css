@@ -1,13 +1,14 @@
 /*
  * Globals
  */
-/* line 5, ../sass/blog.scss */
+/* line 13, ../sass/blog.scss */
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  background: url("/assets/images/bg-1-1.png");
 }
 
-/* line 10, ../sass/blog.scss */
+/* line 19, ../sass/blog.scss */
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -20,11 +21,21 @@ h6, .h6 {
   color: #333;
 }
 
+/* line 31, ../sass/blog.scss */
+.container {
+  background: #eee;
+}
+
+/* line 35, ../sass/blog.scss */
+.blog-masthead .container {
+  background: #428bca;
+}
+
 /*
  * Override Bootstrap's default container.
  */
 @media (min-width: 1200px) {
-  /* line 28, ../sass/blog.scss */
+  /* line 45, ../sass/blog.scss */
   .container {
     width: 970px;
   }
@@ -32,7 +43,7 @@ h6, .h6 {
 /*
  * Masthead for nav
  */
-/* line 38, ../sass/blog.scss */
+/* line 55, ../sass/blog.scss */
 .blog-masthead {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -40,7 +51,7 @@ h6, .h6 {
 }
 
 /* Nav links */
-/* line 45, ../sass/blog.scss */
+/* line 62, ../sass/blog.scss */
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -49,7 +60,7 @@ h6, .h6 {
   color: #cdddeb;
 }
 
-/* line 52, ../sass/blog.scss */
+/* line 69, ../sass/blog.scss */
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -57,12 +68,12 @@ h6, .h6 {
 }
 
 /* Active state gets a caret at the bottom */
-/* line 59, ../sass/blog.scss */
+/* line 76, ../sass/blog.scss */
 .blog-nav .active {
   color: #fff;
 }
 
-/* line 62, ../sass/blog.scss */
+/* line 79, ../sass/blog.scss */
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -80,13 +91,13 @@ h6, .h6 {
 /*
  * Blog name and description
  */
-/* line 81, ../sass/blog.scss */
+/* line 98, ../sass/blog.scss */
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 85, ../sass/blog.scss */
+/* line 102, ../sass/blog.scss */
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -94,7 +105,7 @@ h6, .h6 {
   font-weight: normal;
 }
 
-/* line 91, ../sass/blog.scss */
+/* line 108, ../sass/blog.scss */
 .blog-description {
   font-size: 20px;
   color: #999;
@@ -103,27 +114,27 @@ h6, .h6 {
 /*
  * Main column and sidebar layout
  */
-/* line 101, ../sass/blog.scss */
+/* line 118, ../sass/blog.scss */
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
 
 /* Sidebar modules for boxing content */
-/* line 107, ../sass/blog.scss */
+/* line 124, ../sass/blog.scss */
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
 }
 
-/* line 111, ../sass/blog.scss */
+/* line 128, ../sass/blog.scss */
 .sidebar-module-inset {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
 
-/* line 116, ../sass/blog.scss */
+/* line 133, ../sass/blog.scss */
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -131,13 +142,13 @@ h6, .h6 {
 }
 
 /* Pagination */
-/* line 124, ../sass/blog.scss */
+/* line 141, ../sass/blog.scss */
 .pager {
   margin-bottom: 60px;
   text-align: left;
 }
 
-/* line 128, ../sass/blog.scss */
+/* line 145, ../sass/blog.scss */
 .pager > li > a {
   width: 140px;
   padding: 10px 20px;
@@ -148,18 +159,18 @@ h6, .h6 {
 /*
  * Blog posts
  */
-/* line 140, ../sass/blog.scss */
+/* line 157, ../sass/blog.scss */
 .blog-post {
   margin-bottom: 60px;
 }
 
-/* line 143, ../sass/blog.scss */
+/* line 160, ../sass/blog.scss */
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
 
-/* line 147, ../sass/blog.scss */
+/* line 164, ../sass/blog.scss */
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
@@ -168,7 +179,7 @@ h6, .h6 {
 /*
  * Footer
  */
-/* line 157, ../sass/blog.scss */
+/* line 174, ../sass/blog.scss */
 .blog-footer {
   padding: 40px 0;
   color: #999;
@@ -177,7 +188,7 @@ h6, .h6 {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 164, ../sass/blog.scss */
+/* line 181, ../sass/blog.scss */
 .blog-footer p:last-child {
   margin-bottom: 0;
 }

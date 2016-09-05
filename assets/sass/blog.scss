@@ -2,9 +2,18 @@
  * Globals
  */
 
+$image-bg: url("/assets/images/bg-1-1.png");
+
+$color-bg-white:      #fff;
+$color-bg-lightgrey:  #eee;
+
+$color-bg-masthead:   #428bca;
+
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  background: $image-bg;
 }
 
 h1, .h1,
@@ -17,6 +26,14 @@ h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
+}
+
+.container {
+  background: $color-bg-lightgrey;
+}
+
+.blog-masthead .container {
+  background: $color-bg-masthead;
 }
 
 
