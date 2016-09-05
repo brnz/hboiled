@@ -1,0 +1,26 @@
+/* ==========================================================================
+   8. Third Party Elements - Embeds from other services
+   ========================================================================== */
+/* Github */
+/* line 8, ../sass/third-party.scss */
+.gist table {
+  margin: 0;
+  font-size: 1.4rem;
+  text-rendering: auto;
+}
+
+/* line 13, ../sass/third-party.scss */
+.gist td {
+  line-height: 1.4;
+}
+
+/* line 16, ../sass/third-party.scss */
+.gist .line-number {
+  min-width: 25px;
+}
+
+/* Pastebin */
+/* line 21, ../sass/third-party.scss */
+.content .embedPastebin {
+  margin-bottom: 1.75em;
+}

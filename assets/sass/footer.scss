@@ -1,0 +1,44 @@
+
+
+/* ==========================================================================
+   11. Footer - The bottom of every page
+   ========================================================================== */
+
+.site-footer {
+    position: relative;
+    margin: 8rem 0 0 0;
+    padding: 1rem 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75em;
+    color: #bbc7cc;
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+}
+
+.site-footer a {
+    color: #bbc7cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    border-bottom: #bbc7cc 1px solid;
+}
+
+.poweredby {
+    display: block;
+    // width: 45%;
+    width: 29%;
+    float: right;
+    text-align: right;
+}
+
+.copyright {
+    display: block;
+    // width: 45%;
+    width: 71%;
+    float: left;
+}
+

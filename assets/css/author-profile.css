@@ -1,0 +1,150 @@
+/* ==========================================================================
+   6. Author profile
+   ========================================================================== */
+/* line 7, ../sass/author-profile.scss */
+.post-head.main-header {
+  height: 65vh;
+  min-height: 180px;
+}
+
+/* line 12, ../sass/author-profile.scss */
+.no-cover.post-head.main-header {
+  height: 85px;
+  min-height: 0;
+  margin-bottom: 0;
+  background: transparent;
+}
+
+/* line 19, ../sass/author-profile.scss */
+.tag-head.main-header {
+  height: 40vh;
+  min-height: 180px;
+}
+
+/* line 24, ../sass/author-profile.scss */
+.author-head.main-header {
+  height: 40vh;
+  min-height: 180px;
+}
+
+/* line 29, ../sass/author-profile.scss */
+.no-cover.author-head.main-header {
+  height: 10vh;
+  min-height: 100px;
+  background: transparent;
+}
+
+/* line 35, ../sass/author-profile.scss */
+.author-profile {
+  padding: 0 15px 5rem 15px;
+  border-bottom: #ebf2f6 1px solid;
+  text-align: center;
+}
+
+/* Add a little circle in the middle of the border-bottom */
+/* line 42, ../sass/author-profile.scss */
+.author-profile:after {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: #e7eef2 1px solid;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: #fff 0 0 0 5px;
+}
+
+/* line 57, ../sass/author-profile.scss */
+.author-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 6px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: #e7eef2 0 0 0 1px;
+}
+
+/* line 76, ../sass/author-profile.scss */
+.author-image .img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+}
+
+/* line 86, ../sass/author-profile.scss */
+.author-profile .author-image {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 120px;
+  height: 120px;
+  padding: 3px;
+  margin: -100px auto 0 auto;
+  box-shadow: none;
+}
+
+/* line 97, ../sass/author-profile.scss */
+.author-title {
+  margin: 1.5rem 0 1rem;
+}
+
+/* line 101, ../sass/author-profile.scss */
+.author-bio {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-weight: 200;
+  color: #50585d;
+  letter-spacing: 0;
+  text-indent: 0;
+}
+
+/* line 110, ../sass/author-profile.scss */
+.author-meta {
+  margin: 1.6rem 0;
+}
+
+/* Location, website, and link */
+/* line 114, ../sass/author-profile.scss */
+.author-profile .author-meta {
+  margin: 2rem 0;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.01rem;
+  font-size: 1.7rem;
+}
+
+/* line 120, ../sass/author-profile.scss */
+.author-meta span {
+  display: inline-block;
+  margin: 0 2rem 1rem 0;
+  word-wrap: break-word;
+}
+
+/* line 125, ../sass/author-profile.scss */
+.author-meta a {
+  text-decoration: none;
+}
+
+/* Turn off meta for page2+ to make room for extra
+   pagination prev/next links */
+/* line 131, ../sass/author-profile.scss */
+.archive-template .author-profile .author-meta {
+  display: none;
+}

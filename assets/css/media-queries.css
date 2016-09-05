@@ -1,0 +1,510 @@
+/* ==========================================================================
+   12. Media Queries - Smaller than 900px
+   ========================================================================== */
+@media only screen and (max-width: 900px) {
+  /* line 9, ../sass/media-queries.scss */
+  blockquote {
+    margin-left: 0;
+  }
+
+  /* line 13, ../sass/media-queries.scss */
+  .main-header {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 240px;
+    height: 60vh;
+    padding: 15% 0;
+  }
+
+  /* line 23, ../sass/media-queries.scss */
+  .scroll-down,
+  .home-template .main-header:after {
+    display: none;
+  }
+
+  /* line 26, ../sass/media-queries.scss */
+  .archive-template .main-header {
+    min-height: 180px;
+    padding: 10% 0;
+  }
+
+  /* line 31, ../sass/media-queries.scss */
+  .blog-logo img {
+    padding: 4px 0;
+  }
+
+  /* line 35, ../sass/media-queries.scss */
+  .page-title {
+    font-size: 4rem;
+    letter-spacing: -1px;
+  }
+
+  /* line 40, ../sass/media-queries.scss */
+  .page-description {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
+
+  /* line 45, ../sass/media-queries.scss */
+  .post {
+    font-size: 0.95em;
+  }
+
+  /* line 49, ../sass/media-queries.scss */
+  body:not(.post-template) .post-title {
+    font-size: 3.2rem;
+  }
+
+  /* line 53, ../sass/media-queries.scss */
+  hr {
+    margin: 2.4em 0;
+  }
+
+  /* line 57, ../sass/media-queries.scss */
+  ol, ul {
+    padding-left: 2em;
+  }
+
+  /* line 61, ../sass/media-queries.scss */
+  h1 {
+    font-size: 4.5rem;
+    text-indent: -2px;
+  }
+
+  /* line 66, ../sass/media-queries.scss */
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  /* line 70, ../sass/media-queries.scss */
+  h3 {
+    font-size: 3.1rem;
+  }
+
+  /* line 74, ../sass/media-queries.scss */
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  /* line 78, ../sass/media-queries.scss */
+  h5 {
+    font-size: 2.2rem;
+  }
+
+  /* line 82, ../sass/media-queries.scss */
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  /* line 86, ../sass/media-queries.scss */
+  .author-profile {
+    padding-bottom: 4rem;
+  }
+
+  /* line 90, ../sass/media-queries.scss */
+  .author-profile .author-bio {
+    font-size: 1.6rem;
+  }
+
+  /* line 94, ../sass/media-queries.scss */
+  .author-meta span {
+    display: block;
+    margin: 1.5rem 0;
+  }
+
+  /* line 98, ../sass/media-queries.scss */
+  .author-profile .author-meta span {
+    font-size: 1.6rem;
+  }
+
+  /* line 102, ../sass/media-queries.scss */
+  .post-head.main-header {
+    height: 45vh;
+  }
+
+  /* line 106, ../sass/media-queries.scss */
+  .tag-head.main-header,
+  .author-head.main-header {
+    height: 30vh;
+  }
+
+  /* line 111, ../sass/media-queries.scss */
+  .no-cover.post-head.main-header {
+    height: 55px;
+    padding: 0;
+  }
+
+  /* line 116, ../sass/media-queries.scss */
+  .no-cover.author-head.main-header {
+    padding: 0;
+  }
+
+  /* line 120, ../sass/media-queries.scss */
+  .gh-subscribe {
+    padding: 2rem;
+  }
+
+  /* line 124, ../sass/media-queries.scss */
+  .gh-subscribe-title {
+    font-size: 2rem;
+  }
+
+  /* line 128, ../sass/media-queries.scss */
+  .gh-subscribe p {
+    font-size: 1.4rem;
+  }
+
+  /* line 132, ../sass/media-queries.scss */
+  .read-next {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  /* line 141, ../sass/media-queries.scss */
+  .read-next p {
+    display: none;
+  }
+
+  /* line 145, ../sass/media-queries.scss */
+  .read-next-story.no-cover + .read-next-story.no-cover {
+    border-top: rgba(0, 0, 100, 0.06) 1px solid;
+    border-left: none;
+  }
+}
+/* ==========================================================================
+   13. Media Queries - Smaller than 500px
+   ========================================================================== */
+@media only screen and (max-width: 500px) {
+  /* line 159, ../sass/media-queries.scss */
+  .main-header {
+    margin-bottom: 15px;
+    height: 40vh;
+  }
+
+  /* line 164, ../sass/media-queries.scss */
+  .no-cover.main-header {
+    height: 30vh;
+  }
+
+  /* line 168, ../sass/media-queries.scss */
+  .archive-template .main-header {
+    max-height: 20vh;
+    min-height: 160px;
+    padding: 10% 0;
+  }
+
+  /* line 174, ../sass/media-queries.scss */
+  .main-nav {
+    padding: 5px;
+    margin-bottom: 2rem;
+  }
+
+  /* line 179, ../sass/media-queries.scss */
+  .blog-logo {
+    padding: 5px;
+  }
+
+  /* line 183, ../sass/media-queries.scss */
+  .blog-logo img {
+    height: 30px;
+  }
+
+  /* line 187, ../sass/media-queries.scss */
+  .menu-button {
+    padding: 0 5px;
+    border-radius: 0;
+    border-width: 0;
+    color: #2e2e2e;
+    background: transparent;
+  }
+
+  /* line 194, ../sass/media-queries.scss */
+  .menu-button:hover {
+    color: #2e2e2e;
+    border-color: transparent;
+    background: none;
+  }
+
+  /* line 199, ../sass/media-queries.scss */
+  body.nav-opened .menu-button {
+    background: none;
+    border: transparent;
+  }
+
+  /* line 204, ../sass/media-queries.scss */
+  .main-nav.overlay a:hover {
+    color: #fff;
+    border-color: transparent;
+    background: transparent;
+  }
+
+  /* line 210, ../sass/media-queries.scss */
+  .no-cover .main-nav.overlay {
+    background: none;
+  }
+
+  /* line 213, ../sass/media-queries.scss */
+  .no-cover .main-nav.overlay .menu-button {
+    border: none;
+  }
+
+  /* line 217, ../sass/media-queries.scss */
+  .main-nav.overlay .menu-button {
+    border-color: transparent;
+  }
+
+  /* line 221, ../sass/media-queries.scss */
+  .nav-title {
+    top: 25px;
+  }
+
+  /* line 226, ../sass/media-queries.scss */
+  .nav-close {
+    position: absolute;
+    top: 18px;
+  }
+
+  /* line 231, ../sass/media-queries.scss */
+  .nav ul {
+    padding: 60px 9% 5%;
+  }
+
+  /* line 235, ../sass/media-queries.scss */
+  .inner,
+  .pagination {
+    width: auto;
+    margin: 2rem auto;
+  }
+
+  /* line 241, ../sass/media-queries.scss */
+  .post {
+    width: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 2rem;
+    line-height: 1.65em;
+  }
+
+  /* line 251, ../sass/media-queries.scss */
+  .post-date {
+    display: none;
+  }
+
+  /* line 255, ../sass/media-queries.scss */
+  .post-template .post-header {
+    margin-bottom: 2rem;
+  }
+
+  /* line 259, ../sass/media-queries.scss */
+  .post-template .post-date {
+    display: inline-block;
+  }
+
+  /* line 263, ../sass/media-queries.scss */
+  hr {
+    margin: 1.75em 0;
+  }
+
+  /* line 267, ../sass/media-queries.scss */
+  p, ul, ol, dl {
+    font-size: 0.95em;
+    margin: 0 0 2.5rem 0;
+  }
+
+  /* line 272, ../sass/media-queries.scss */
+  .page-title {
+    font-size: 3rem;
+  }
+
+  /* line 276, ../sass/media-queries.scss */
+  .post-excerpt p {
+    font-size: 0.85em;
+  }
+
+  /* line 280, ../sass/media-queries.scss */
+  .page-description {
+    font-size: 1.6rem;
+  }
+
+  /* line 284, ../sass/media-queries.scss */
+  h1, h2, h3,
+  h4, h5, h6 {
+    margin: 0 0 0.3em 0;
+  }
+
+  /* line 289, ../sass/media-queries.scss */
+  h1 {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+  }
+
+  /* line 294, ../sass/media-queries.scss */
+  h2 {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+  }
+
+  /* line 299, ../sass/media-queries.scss */
+  h3 {
+    font-size: 2.1rem;
+  }
+
+  /* line 303, ../sass/media-queries.scss */
+  h4 {
+    font-size: 1.9rem;
+  }
+
+  /* line 307, ../sass/media-queries.scss */
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  /* line 311, ../sass/media-queries.scss */
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  /* line 315, ../sass/media-queries.scss */
+  body:not(.post-template) .post-title {
+    font-size: 2.5rem;
+  }
+
+  /* line 319, ../sass/media-queries.scss */
+  .post-template .site-footer {
+    margin-top: 0;
+  }
+
+  /* line 323, ../sass/media-queries.scss */
+  .post-content img {
+    padding: 0;
+    width: calc(100% + 32px);
+    /* expand with to image + margins */
+    min-width: 0;
+    max-width: 112%;
+    /* fallback when calc doesn't work */
+  }
+
+  /* line 330, ../sass/media-queries.scss */
+  .post-meta {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+
+  /* line 335, ../sass/media-queries.scss */
+  .post-footer {
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+  }
+
+  /* line 340, ../sass/media-queries.scss */
+  .post-footer .author {
+    margin: 0 0 2rem 0;
+    padding: 0 0 1.6rem 0;
+    border-bottom: #ebf2f6 1px dashed;
+  }
+
+  /* line 346, ../sass/media-queries.scss */
+  .post-footer .share {
+    position: static;
+    width: auto;
+  }
+
+  /* line 351, ../sass/media-queries.scss */
+  .post-footer .share a {
+    margin: 1.4rem 0.8rem 0 0.8rem;
+  }
+
+  /* line 355, ../sass/media-queries.scss */
+  .author-meta li {
+    float: none;
+    margin: 0;
+    line-height: 1.75em;
+  }
+
+  /* line 361, ../sass/media-queries.scss */
+  .author-meta li:before {
+    display: none;
+  }
+
+  /* line 365, ../sass/media-queries.scss */
+  .older-posts,
+  .newer-posts {
+    position: static;
+    margin: 10px 0;
+  }
+
+  /* line 371, ../sass/media-queries.scss */
+  .page-number {
+    display: block;
+  }
+
+  /* line 375, ../sass/media-queries.scss */
+  .site-footer {
+    margin-top: 3rem;
+  }
+
+  /* line 379, ../sass/media-queries.scss */
+  .author-profile {
+    padding-bottom: 2rem;
+  }
+
+  /* line 383, ../sass/media-queries.scss */
+  .post-head.main-header {
+    height: 30vh;
+  }
+
+  /* line 387, ../sass/media-queries.scss */
+  .tag-head.main-header,
+  .author-head.main-header {
+    height: 20vh;
+  }
+
+  /* line 392, ../sass/media-queries.scss */
+  .post-footer .author-image {
+    top: -60px;
+  }
+
+  /* line 396, ../sass/media-queries.scss */
+  .author-profile .author-image {
+    margin-top: -70px;
+  }
+
+  /* line 400, ../sass/media-queries.scss */
+  .author-profile .author-meta span {
+    font-size: 1.4rem;
+  }
+
+  /* line 404, ../sass/media-queries.scss */
+  .archive-template .main-header .page-description {
+    display: none;
+  }
+
+  /* line 408, ../sass/media-queries.scss */
+  .gh-subscribe {
+    padding: 15px;
+  }
+
+  /* line 412, ../sass/media-queries.scss */
+  .gh-subscribe form {
+    margin-top: 10px;
+  }
+
+  /* line 416, ../sass/media-queries.scss */
+  .read-next {
+    margin-top: 2rem;
+    margin-bottom: -37px;
+  }
+
+  /* line 421, ../sass/media-queries.scss */
+  .read-next .post {
+    width: 100%;
+  }
+}
