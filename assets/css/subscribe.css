@@ -1,7 +1,7 @@
 /* ==========================================================================
    10. Subscribe - Generate those email subscribers
    ========================================================================== */
-/* line 8, ../sass/subscribe.scss */
+/* line 6, ../sass/subscribe.scss */
 .gh-subscribe {
   border: #e7eef2 1px solid;
   padding: 3rem;
@@ -11,32 +11,32 @@
   border-radius: 5px;
 }
 
-/* line 17, ../sass/subscribe.scss */
+/* line 15, ../sass/subscribe.scss */
 .gh-subscribe-title {
   margin-bottom: 0;
   font-size: 2.4rem;
 }
 
-/* line 22, ../sass/subscribe.scss */
+/* line 20, ../sass/subscribe.scss */
 .gh-subscribe p {
   margin-top: 0;
   font-size: 1.5rem;
 }
 
-/* line 27, ../sass/subscribe.scss */
+/* line 25, ../sass/subscribe.scss */
 .gh-subscribe form {
   display: flex;
   justify-content: center;
   margin: 20px 0 0 0;
 }
 
-/* line 33, ../sass/subscribe.scss */
+/* line 31, ../sass/subscribe.scss */
 .gh-subscribe .form-group {
   flex-grow: 1;
   max-width: 300px;
 }
 
-/* line 38, ../sass/subscribe.scss */
+/* line 36, ../sass/subscribe.scss */
 .gh-subscribe .subscribe-email {
   box-sizing: border-box;
   width: 100%;
@@ -45,19 +45,19 @@
   transition: all ease 0.5s;
 }
 
-/* line 46, ../sass/subscribe.scss */
+/* line 44, ../sass/subscribe.scss */
 .gh-subscribe .subscribe-email:focus {
   border: #5ba4e5 1px solid;
   transition: all ease 0.2s;
 }
 
-/* line 51, ../sass/subscribe.scss */
+/* line 49, ../sass/subscribe.scss */
 .gh-subscribe button {
   margin-left: -1px;
   border-radius: 0 4px 4px 0;
 }
 
-/* line 56, ../sass/subscribe.scss */
+/* line 54, ../sass/subscribe.scss */
 .gh-subscribe-rss {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;

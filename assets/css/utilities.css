@@ -2,25 +2,25 @@
    3. Utilities - These things get used a lot
    ========================================================================== */
 /* Clears shit */
-/* line 8, ../sass/utilities.scss */
+/* line 7, ../sass/utilities.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 13, ../sass/utilities.scss */
+/* line 12, ../sass/utilities.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 14, ../sass/utilities.scss */
+/* line 13, ../sass/utilities.scss */
 .clearfix {
   zoom: 1;
 }
 
 /* Hides shit */
-/* line 17, ../sass/utilities.scss */
+/* line 16, ../sass/utilities.scss */
 .hidden {
   text-indent: -9999px;
   visibility: hidden;
@@ -28,7 +28,7 @@
 }
 
 /* Creates a responsive wrapper that makes our content scale nicely */
-/* line 24, ../sass/utilities.scss */
+/* line 23, ../sass/utilities.scss */
 .inner {
   position: relative;
   width: 80%;
@@ -37,14 +37,14 @@
 }
 
 /* Centres vertically yo. (IE8+) */
-/* line 32, ../sass/utilities.scss */
+/* line 31, ../sass/utilities.scss */
 .vertical {
   display: table-cell;
   vertical-align: middle;
 }
 
 /* Wraps the main content & footer */
-/* line 38, ../sass/utilities.scss */
+/* line 37, ../sass/utilities.scss */
 .site-wrapper {
   position: relative;
   max-width: 975px;
@@ -61,7 +61,7 @@
   transition: transform 0.5s ease;
 }
 
-/* line 57, ../sass/utilities.scss */
+/* line 56, ../sass/utilities.scss */
 body.nav-opened .site-wrapper {
   overflow-x: hidden;
   -webkit-transform: translate3D(-240px, 0, 0);

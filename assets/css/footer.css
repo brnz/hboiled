@@ -1,7 +1,7 @@
 /* ==========================================================================
    11. Footer - The bottom of every page
    ========================================================================== */
-/* line 7, ../sass/footer.scss */
+/* line 6, ../sass/footer.scss */
 .site-footer {
   position: relative;
   margin: 8rem 0 0 0;
@@ -12,25 +12,25 @@
   color: #bbc7cc;
 }
 @media screen and (max-width: 700px) {
-  /* line 7, ../sass/footer.scss */
+  /* line 6, ../sass/footer.scss */
   .site-footer {
     display: none;
   }
 }
 
-/* line 20, ../sass/footer.scss */
+/* line 19, ../sass/footer.scss */
 .site-footer a {
   color: #bbc7cc;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 26, ../sass/footer.scss */
+/* line 25, ../sass/footer.scss */
 .site-footer a:hover {
   border-bottom: #bbc7cc 1px solid;
 }
 
-/* line 30, ../sass/footer.scss */
+/* line 29, ../sass/footer.scss */
 .poweredby {
   display: block;
   width: 29%;
@@ -38,7 +38,7 @@
   text-align: right;
 }
 
-/* line 38, ../sass/footer.scss */
+/* line 37, ../sass/footer.scss */
 .copyright {
   display: block;
   width: 71%;

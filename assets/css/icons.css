@@ -10,7 +10,7 @@
   font-style: normal;
 }
 /* Apply these base styles to all icons */
-/* line 20, ../sass/icons.scss */
+/* line 19, ../sass/icons.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "casper-icons", "Open Sans", sans-serif;
   speak: none;
@@ -26,55 +26,55 @@
 
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
-/* line 35, ../sass/icons.scss */
+/* line 34, ../sass/icons.scss */
 .icon-ghost:before {
   content: "\f600";
 }
 
-/* line 38, ../sass/icons.scss */
+/* line 37, ../sass/icons.scss */
 .icon-feed:before {
   content: "\f601";
 }
 
-/* line 41, ../sass/icons.scss */
+/* line 40, ../sass/icons.scss */
 .icon-twitter:before {
   content: "\f602";
   font-size: 1.1em;
 }
 
-/* line 45, ../sass/icons.scss */
+/* line 44, ../sass/icons.scss */
 .icon-google-plus:before {
   content: "\f603";
 }
 
-/* line 48, ../sass/icons.scss */
+/* line 47, ../sass/icons.scss */
 .icon-facebook:before {
   content: "\f604";
 }
 
-/* line 51, ../sass/icons.scss */
+/* line 50, ../sass/icons.scss */
 .icon-arrow-left:before {
   content: "\f605";
 }
 
-/* line 54, ../sass/icons.scss */
+/* line 53, ../sass/icons.scss */
 .icon-stats:before {
   content: "\f606";
 }
 
-/* line 57, ../sass/icons.scss */
+/* line 56, ../sass/icons.scss */
 .icon-location:before {
   content: "\f607";
   margin-left: -3px;
   /* Tracking fix */
 }
 
-/* line 61, ../sass/icons.scss */
+/* line 60, ../sass/icons.scss */
 .icon-link:before {
   content: "\f608";
 }
 
-/* line 64, ../sass/icons.scss */
+/* line 63, ../sass/icons.scss */
 .icon-menu:before {
   content: "\f609";
 }

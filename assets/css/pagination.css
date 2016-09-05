@@ -2,7 +2,7 @@
    9. Pagination - Tools to let you flick between pages
    ========================================================================== */
 /* The main wrapper for our pagination links */
-/* line 8, ../sass/pagination.scss */
+/* line 7, ../sass/pagination.scss */
 .pagination {
   position: relative;
   width: 80%;
@@ -14,14 +14,14 @@
   text-align: center;
 }
 
-/* line 19, ../sass/pagination.scss */
+/* line 18, ../sass/pagination.scss */
 .pagination a {
   color: #9eabb3;
   transition: all 0.2s ease;
 }
 
 /* Push the previous/next links out to the left/right */
-/* line 25, ../sass/pagination.scss */
+/* line 24, ../sass/pagination.scss */
 .older-posts,
 .newer-posts {
   position: absolute;
@@ -33,37 +33,37 @@
   transition: border 0.3s ease;
 }
 
-/* line 36, ../sass/pagination.scss */
+/* line 35, ../sass/pagination.scss */
 .older-posts {
   right: 0;
 }
 
-/* line 40, ../sass/pagination.scss */
+/* line 39, ../sass/pagination.scss */
 .page-number {
   display: inline-block;
   padding: 2px 0;
   min-width: 100px;
 }
 
-/* line 46, ../sass/pagination.scss */
+/* line 45, ../sass/pagination.scss */
 .newer-posts {
   left: 0;
 }
 
-/* line 50, ../sass/pagination.scss */
+/* line 49, ../sass/pagination.scss */
 .older-posts:hover,
 .newer-posts:hover {
   color: #889093;
   border-color: #98a0a4;
 }
 
-/* line 56, ../sass/pagination.scss */
+/* line 55, ../sass/pagination.scss */
 .extra-pagination {
   display: none;
   border-bottom: #ebf2f6 1px solid;
 }
 
-/* line 60, ../sass/pagination.scss */
+/* line 59, ../sass/pagination.scss */
 .extra-pagination:after {
   display: block;
   content: "";
@@ -79,19 +79,19 @@
   box-shadow: #fff 0 0 0 5px;
 }
 
-/* line 74, ../sass/pagination.scss */
+/* line 73, ../sass/pagination.scss */
 .extra-pagination .pagination {
   width: auto;
 }
 
 /* On page2+ make all the headers smaller */
-/* line 79, ../sass/pagination.scss */
+/* line 78, ../sass/pagination.scss */
 .archive-template .main-header {
   max-height: 30vh;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
-/* line 84, ../sass/pagination.scss */
+/* line 83, ../sass/pagination.scss */
 .archive-template .extra-pagination {
   display: block;
 }

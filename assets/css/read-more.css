@@ -1,7 +1,7 @@
 /* ==========================================================================
    7. Read More - Next/Prev Post Links
    ========================================================================== */
-/* line 7, ../sass/read-more.scss */
+/* line 6, ../sass/read-more.scss */
 .read-next {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,7 +14,7 @@
   margin-top: 10rem;
 }
 
-/* line 19, ../sass/read-more.scss */
+/* line 18, ../sass/read-more.scss */
 .read-next-story {
   display: -webkit-box;
   display: -webkit-flex;
@@ -34,20 +34,20 @@
   overflow: hidden;
 }
 
-/* line 37, ../sass/read-more.scss */
+/* line 36, ../sass/read-more.scss */
 .read-next-story:hover:before {
   background: rgba(0, 0, 0, 0.8);
   transition: all 0.2s ease;
 }
 
-/* line 41, ../sass/read-more.scss */
+/* line 40, ../sass/read-more.scss */
 .read-next-story:hover .post:before {
   color: #222;
   background: #fff;
   transition: all 0.2s ease;
 }
 
-/* line 47, ../sass/read-more.scss */
+/* line 46, ../sass/read-more.scss */
 .read-next-story:before {
   content: "";
   display: block;
@@ -60,13 +60,13 @@
   transition: all 0.5s ease;
 }
 
-/* line 59, ../sass/read-more.scss */
+/* line 58, ../sass/read-more.scss */
 .read-next-story .post {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/* line 64, ../sass/read-more.scss */
+/* line 63, ../sass/read-more.scss */
 .read-next-story .post:before {
   content: "Read This Next";
   padding: 4px 10px 5px;
@@ -79,52 +79,52 @@
   transition: all 0.5s ease;
 }
 
-/* line 75, ../sass/read-more.scss */
+/* line 74, ../sass/read-more.scss */
 .read-next-story.prev .post:before {
   content: "You Might Enjoy";
 }
 
-/* line 79, ../sass/read-more.scss */
+/* line 78, ../sass/read-more.scss */
 .read-next-story h2 {
   margin-top: 1rem;
   color: #fff;
 }
 
-/* line 84, ../sass/read-more.scss */
+/* line 83, ../sass/read-more.scss */
 .read-next-story p {
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
 /* Special styles for posts with no cover images */
-/* line 90, ../sass/read-more.scss */
+/* line 89, ../sass/read-more.scss */
 .read-next-story.no-cover {
   background: #f5f8fa;
 }
 
-/* line 94, ../sass/read-more.scss */
+/* line 93, ../sass/read-more.scss */
 .read-next-story.no-cover:before {
   display: none;
 }
 
-/* line 98, ../sass/read-more.scss */
+/* line 97, ../sass/read-more.scss */
 .read-next-story.no-cover .post:before {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 103, ../sass/read-more.scss */
+/* line 102, ../sass/read-more.scss */
 .read-next-story.no-cover h2 {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 107, ../sass/read-more.scss */
+/* line 106, ../sass/read-more.scss */
 .read-next-story.no-cover p {
   color: rgba(0, 0, 0, 0.5);
 }
 
 /* if there are two posts without covers, put a border between them */
-/* line 112, ../sass/read-more.scss */
+/* line 111, ../sass/read-more.scss */
 .read-next-story.no-cover + .read-next-story.no-cover {
   border-left: rgba(0, 0, 100, 0.04) 1px solid;
   -webkit-box-sizing: border-box;
@@ -133,7 +133,7 @@
 }
 
 /* Correctly position site-footer when next to the .read-next container */
-/* line 120, ../sass/read-more.scss */
+/* line 119, ../sass/read-more.scss */
 .read-next + .site-footer {
   position: absolute;
   bottom: 0;
