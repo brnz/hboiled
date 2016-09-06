@@ -41,13 +41,13 @@ h6, .h6 {
 @media (min-width: 1200px) {
   /* line 61, ../sass/blog.scss */
   .container {
-    width: 970px;
+    width: 1057px;
   }
 }
 /*
  * Masthead for nav
  */
-/* line 71, ../sass/blog.scss */
+/* line 72, ../sass/blog.scss */
 .blog-masthead {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ h6, .h6 {
 }
 
 /* Nav links */
-/* line 78, ../sass/blog.scss */
+/* line 79, ../sass/blog.scss */
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -64,7 +64,7 @@ h6, .h6 {
   color: #cdddeb;
 }
 
-/* line 85, ../sass/blog.scss */
+/* line 86, ../sass/blog.scss */
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -72,12 +72,12 @@ h6, .h6 {
 }
 
 /* Active state gets a caret at the bottom */
-/* line 92, ../sass/blog.scss */
+/* line 93, ../sass/blog.scss */
 .blog-nav .active {
   color: #fff;
 }
 
-/* line 95, ../sass/blog.scss */
+/* line 96, ../sass/blog.scss */
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -95,13 +95,13 @@ h6, .h6 {
 /*
  * Blog name and description
  */
-/* line 114, ../sass/blog.scss */
+/* line 115, ../sass/blog.scss */
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 118, ../sass/blog.scss */
+/* line 119, ../sass/blog.scss */
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -109,7 +109,7 @@ h6, .h6 {
   font-weight: normal;
 }
 
-/* line 124, ../sass/blog.scss */
+/* line 125, ../sass/blog.scss */
 .blog-description {
   font-size: 20px;
   color: #999;
@@ -118,27 +118,27 @@ h6, .h6 {
 /*
  * Main column and sidebar layout
  */
-/* line 134, ../sass/blog.scss */
+/* line 135, ../sass/blog.scss */
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
 
 /* Sidebar modules for boxing content */
-/* line 140, ../sass/blog.scss */
+/* line 141, ../sass/blog.scss */
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
 }
 
-/* line 144, ../sass/blog.scss */
+/* line 145, ../sass/blog.scss */
 .sidebar-module-inset {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
 
-/* line 149, ../sass/blog.scss */
+/* line 150, ../sass/blog.scss */
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -146,13 +146,13 @@ h6, .h6 {
 }
 
 /* Pagination */
-/* line 157, ../sass/blog.scss */
+/* line 158, ../sass/blog.scss */
 .pager {
   margin-bottom: 60px;
   text-align: left;
 }
 
-/* line 161, ../sass/blog.scss */
+/* line 162, ../sass/blog.scss */
 .pager > li > a {
   width: 140px;
   padding: 10px 20px;
@@ -163,18 +163,18 @@ h6, .h6 {
 /*
  * Blog posts
  */
-/* line 173, ../sass/blog.scss */
+/* line 174, ../sass/blog.scss */
 .blog-post {
   margin-bottom: 60px;
 }
 
-/* line 176, ../sass/blog.scss */
+/* line 177, ../sass/blog.scss */
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
 
-/* line 180, ../sass/blog.scss */
+/* line 181, ../sass/blog.scss */
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
@@ -183,7 +183,7 @@ h6, .h6 {
 /*
  * Footer
  */
-/* line 190, ../sass/blog.scss */
+/* line 191, ../sass/blog.scss */
 .blog-footer {
   padding: 40px 0;
   color: #999;
@@ -192,7 +192,7 @@ h6, .h6 {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 197, ../sass/blog.scss */
+/* line 198, ../sass/blog.scss */
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
