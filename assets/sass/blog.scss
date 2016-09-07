@@ -2,22 +2,41 @@
  * Variables
  */
 
-$font-stack: "Source Sans Pro", "Open Sans", sans-serif;
-// $font-stack-serif: Georgia, "Times New Roman", Times, serif;
-$font-stack-serif: $font-stack;
-// $font-stack-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-stack-sans-serif: $font-stack;
+// $font-stack: Georgia, "Times New Roman", Times, serif;
+// $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: "Source Sans Pro", Arial, sans-serif;
 
 $image-bg: url("/assets/images/bg-1-1.png");
 $image-logo: url("/assets/images/logo-1-1.png");
 
-$color-bg-container:    #eee;
-$color-bg-masthead:     #428bca;
-$color-bg-footer:       #f9f9f9;
+$color-bg-container:  #eee;
+$color-bg-masthead:   #428bca;
+$color-bg-footer:     #f9f9f9;
+$color-bg-about:      #f5f5f5;
+$color-body:          #555;
+$color-heading:       #333;
+$color-description:   #999;
+$color-nav:           #cdddeb;
+$color-nav-hover:     #fff;
+$color-nav-caret:     $color-bg-container;
+$color-border:        #e5e5e5;
 
-$color-fg-body:         #555;
-$color-fg-heading:      #333;
-$color-fg-description:  #999;
+
+/*
+ * Mixins
+ */
+
+@mixin border($bottom: 0px, $top: 0px) {
+  border-bottom: $bottom solid $color-border;
+  border-top: $top solid $color-border;
+}
+
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
 
 
 /*
@@ -25,8 +44,8 @@ $color-fg-description:  #999;
  */
 
 body {
-  font-family: $font-stack-serif;
-  color: $color-fg-body;
+  font-family: $font-stack; // serif
+  color: $color-body;
   background: $image-bg;
 }
 
@@ -37,11 +56,20 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: $font-stack-sans-serif;
+  font-family: $font-stack; // sans-serif
   font-weight: normal;
-  color: #color-fg-heading;
+  color: $color-heading;
 }
 
+a {
+  @include transition(background, color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// TODO: Merge these classes with respective duplicates.
 .container {
   background: $color-bg-container;
   // padding: 0 26px 0 26px;
@@ -50,6 +78,22 @@ h6, .h6 {
 
 .blog-masthead .container {
   background: $color-bg-masthead;
+}
+
+.blog-description {
+  @include border($bottom: 1px);
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.blog-post {
+  @include border($bottom: 1px);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.sidebar-module {
+  @include border($bottom: 1px);
 }
 
 
@@ -81,17 +125,17 @@ h6, .h6 {
   display: inline-block;
   padding: 10px;
   font-weight: 500;
-  color: #cdddeb;
+  color: $color-nav;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #fff;
+  color: $color-nav-hover;
   text-decoration: none;
 }
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
-  color: #fff;
+  color: $color-nav-caret;
 }
 .blog-nav .active:after {
   position: absolute;
@@ -124,7 +168,7 @@ h6, .h6 {
 }
 .blog-description {
   font-size: 20px;
-  color: $color-fg-description;
+  color: $color-description;
 }
 
 
@@ -144,7 +188,7 @@ h6, .h6 {
 }
 .sidebar-module-inset {
   padding: 15px;
-  background-color: #f5f5f5;
+  background-color: $color-bg-about;
   border-radius: 4px;
 }
 .sidebar-module-inset p:last-child,
@@ -180,7 +224,7 @@ h6, .h6 {
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
+  color: $color-description;
 }
 
 
@@ -190,10 +234,10 @@ h6, .h6 {
 
 .blog-footer {
   padding: 40px 0;
-  color: #999;
+  color: $color-description;
   text-align: center;
   background-color: $color-bg-footer;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $color-border;
 }
 .blog-footer p:last-child {
   margin-bottom: 0;

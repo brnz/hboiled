@@ -2,7 +2,8 @@
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
 <div class="blog-header">
-  <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+  <!-- <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1> -->
+  <h1 class="blog-title"><a href="{{@blog.url}}"><img src="{{asset "images/logo-1-1.png"}}"></a></h1>
   <p class="lead blog-description">{{@blog.description}}</p>
 </div>
 
