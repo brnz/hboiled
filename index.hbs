@@ -14,12 +14,8 @@
     {{!-- The tag below includes the post loop - partials/loop.hbs --}}
     {{> "loop"}}
 
-    <nav>
-      <ul class="pager">
-        <li><a href="#">Previous</a></li>
-        <li><a href="#">Next</a></li>
-      </ul>
-    </nav>
+    {{!-- Previous/next page links - displayed on every page --}}
+    {{pagination}}
 
   </div><!-- /.blog-main -->
 
