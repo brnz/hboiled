@@ -18,7 +18,7 @@ $color-heading:       #333;
 $color-description:   #999;
 $color-nav:           #cdddeb;
 $color-nav-hover:     #fff;
-$color-nav-caret:     $color-bg-container;
+$color-nav-caret:     $color-bg-about; // #fff;
 $color-border:        #e5e5e5;
 
 
@@ -77,7 +77,7 @@ a:hover {
 // TODO: Merge these classes with respective duplicates.
 .container {
   @include box-shadow;
-  background: $color-bg-container;
+  background: $color-bg-about;
   // padding: 0 26px 0 26px;
   padding: 0 30px 0 30px;
 }

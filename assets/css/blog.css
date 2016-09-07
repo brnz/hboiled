@@ -44,7 +44,7 @@ a:hover {
 .container {
   -webkit-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  background: #eee;
+  background: #f5f5f5;
   padding: 0 30px 0 30px;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 /* Active state gets a caret at the bottom */
 /* line 151, ../sass/blog.scss */
 .blog-nav .active {
-  color: #eee;
+  color: #f5f5f5;
 }
 
 /* line 154, ../sass/blog.scss */
