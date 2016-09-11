@@ -9,7 +9,7 @@
  */
 /* line 66, ../sass/blog.scss */
 body {
-  font-family: "Source  Sans  Pro", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   color: #555;
   background: url("/assets/images/bg-1-1.png");
 }
@@ -22,7 +22,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Source  Sans  Pro", Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
