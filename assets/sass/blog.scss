@@ -4,22 +4,27 @@
 
 // $font-stack: Georgia, "Times New Roman", Times, serif;
 // $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-stack: "Source Sans Pro", Arial, sans-serif;
+$font-stack: "Source  Sans  Pro",  Arial,  sans-serif;
 
-$image-bg: url("/assets/images/bg-1-1.png");
-$image-logo: url("/assets/images/logo-1-1.png");
+$width-medium: 900px;
+$width-small:  500px;
 
-$color-bg-container:  #eee;
-$color-bg-masthead:   #428bca;
-$color-bg-footer:     #f9f9f9;
-$color-bg-about:      #f5f5f5;
-$color-body:          #555;
-$color-heading:       #333;
-$color-description:   #999;
-$color-nav:           #cdddeb;
-$color-nav-hover:     #fff;
-$color-nav-caret:     $color-bg-about; // #fff;
-$color-border:        #e5e5e5;
+$image-bg:       url("/assets/images/bg-1-1.png");
+$image-logo-1-1: url("/assets/images/logo-1-1.png");
+$image-logo-2-3: url("/assets/images/logo-2-3.png");
+$image-logo-1-2: url("/assets/images/logo-1-2.png");
+
+$color-bg-container: #eee;
+$color-bg-masthead:  #428bca;
+$color-bg-footer:    #f9f9f9;
+$color-bg-about:     #f5f5f5;
+$color-body:         #555;
+$color-heading:      #333;
+$color-description:  #999;
+$color-nav:          #cdddeb;
+$color-nav-hover:    #fff;
+$color-nav-caret:    $color-bg-about; // #fff;
+$color-border:       #e5e5e5;
 
 
 /*
@@ -34,6 +39,16 @@ $color-border:        #e5e5e5;
 @mixin box-shadow($inset: null, $x: 0, $y: -2px) {
   -webkit-box-shadow: $inset $x $y 5px rgba(0,0,0,.1);
           box-shadow: $inset $x $y 5px rgba(0,0,0,.1);
+}
+
+@mixin font-size($size, $medium: 0.9, $small: 0.8) {
+  font-size: $size;
+  @media screen and (max-width: $width-medium) {
+    font-size: $size * $medium
+  }
+  @media screen and (max-width: $width-small) {
+    font-size: $size * $small
+  }
 }
 
 @mixin transition($properties...) {
@@ -74,7 +89,27 @@ a:hover {
   text-decoration: none !important;
 }
 
+.blog-logo {
+  background: $image-logo-1-1;
+  height: 140px;
+  width: 480px;
+  @media screen and (max-width: $width-medium) {
+    background: $image-logo-2-3;
+    height: 92px;
+    width: 317px;
+  }
+  @media screen and (max-width: $width-small) {
+    background: $image-logo-1-2;
+    height: 70px;
+    width: 240px;
+  }
+}
+
 // TODO: Merge these classes with respective duplicates.
+.blog-masthead {
+  // TODO: We might need this.
+}
+
 .container {
   @include box-shadow;
   background: $color-bg-about;
@@ -85,6 +120,9 @@ a:hover {
 .blog-masthead .container {
   background: $color-bg-masthead;
   box-shadow: none !important;
+  @media screen and (max-width: $width-medium) {
+    // TODO: Responsive stuff be here.
+  }
 }
 
 .blog-description {
@@ -123,7 +161,7 @@ a:hover {
 @media (min-width: 1200px) {
   .container {
     // width: 970px;
-    width: 1057px;
+    width: 1024px;
   }
 }
 
@@ -167,6 +205,9 @@ a:hover {
   border-right: 5px solid transparent;
   border-bottom: 5px solid;
   border-left: 5px solid transparent;
+  @media screen and (max-width: $width-medium) {
+    display: none;
+  }
 }
 
 
@@ -185,7 +226,7 @@ a:hover {
   font-weight: normal;
 }
 .blog-description {
-  font-size: 20px;
+  @include font-size($size: 20px);
   color: $color-description;
 }
 
@@ -195,7 +236,7 @@ a:hover {
  */
 
 .blog-main {
-  font-size: 18px;
+  @include font-size($size: 18px);
   line-height: 1.5;
 }
 
@@ -238,7 +279,7 @@ a:hover {
 }
 .blog-post-title {
   margin-bottom: 5px;
-  font-size: 40px;
+  @include font-size($size: 40px);
 }
 .blog-post-meta {
   margin-bottom: 20px;
