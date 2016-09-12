@@ -6,26 +6,34 @@
 {{!-- Everything inside the #post tags pulls data from the page --}}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-        {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {{/if}}
-    </nav>
-</header>
+<div class="blog-header">
+  <!-- TODO: Fill this in. -->
+</div>
 
-<main class="content" role="main">
-    <article class="{{post_class}}">
+<div class="row">
 
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
-        </header>
+  <div class="col-sm-8 blog-main">
 
-        <section class="post-content">
-            {{content}}
-        </section>
+    <div class="blog-post">
+      <h2 class="blog-post-title">{{title}}</h2>
+      <!-- <p class="blog-post-meta">{{date}} by <a href="#">{{author.name}}</a></p> -->
+      <!-- TODO: Add spacing here. -->
 
-    </article>
-</main>
+      {{!-- post content be here --}}
+      {{content}}
+    </div><!-- /.blog-post -->
+
+    <!-- <nav>
+      <ul class="pager">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </nav> -->
+
+  </div><!-- /.blog-main -->
+
+  {{!-- sidebar content be here - partials/sidebar.hbs --}}
+  {{> "sidebar"}}
+
+</div><!-- /.row -->
 {{/post}}
