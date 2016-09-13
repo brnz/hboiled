@@ -183,6 +183,12 @@ a:hover {
   }
 }
 
+.navbar {
+  * {
+    border-color: lighten($color-bg-masthead, 2.5%) !important;
+  }
+}
+
 // Search
 .btn {
   background: darken($color-bg-about, 2.5%);
@@ -235,6 +241,7 @@ a:hover {
 .blog-footer {
   @include box-shadow($inset: inset);
   bottom: 0;
+  padding: 40px 30px !important;
   position: absolute;
   width: 100%;
 }

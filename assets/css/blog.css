@@ -134,11 +134,16 @@ a:hover {
 }
 
 /* line 187, ../sass/blog.scss */
+.navbar * {
+  border-color: #4c91cd !important;
+}
+
+/* line 193, ../sass/blog.scss */
 .btn {
   background: #efefef;
 }
 
-/* line 191, ../sass/blog.scss */
+/* line 197, ../sass/blog.scss */
 .form-control {
   background: #f5f5f5;
 }
@@ -146,12 +151,12 @@ a:hover {
 /*
  * Original blog.scss stuff
  */
-/* line 202, ../sass/blog.scss */
+/* line 208, ../sass/blog.scss */
 .blog-masthead .container {
   background: #428bca;
 }
 
-/* line 211, ../sass/blog.scss */
+/* line 217, ../sass/blog.scss */
 .blog-description {
   border-bottom: 1px solid #e5e5e5;
   border-top: 0px solid #e5e5e5;
@@ -159,12 +164,12 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 217, ../sass/blog.scss */
+/* line 223, ../sass/blog.scss */
 .pager {
   text-align: center !important;
 }
 
-/* line 221, ../sass/blog.scss */
+/* line 227, ../sass/blog.scss */
 .blog-post {
   border-bottom: 1px solid #e5e5e5;
   border-top: 0px solid #e5e5e5;
@@ -172,23 +177,24 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 227, ../sass/blog.scss */
+/* line 233, ../sass/blog.scss */
 .sidebar-module {
   border-bottom: 1px solid #e5e5e5;
   border-top: 0px solid #e5e5e5;
 }
 
-/* line 231, ../sass/blog.scss */
+/* line 237, ../sass/blog.scss */
 .sidebar-module-inset {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 235, ../sass/blog.scss */
+/* line 241, ../sass/blog.scss */
 .blog-footer {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   bottom: 0;
+  padding: 40px 30px !important;
   position: absolute;
   width: 100%;
 }
@@ -197,7 +203,7 @@ a:hover {
  * Override Bootstrap's default container.
  */
 @media (min-width: 1200px) {
-  /* line 248, ../sass/blog.scss */
+  /* line 255, ../sass/blog.scss */
   .container {
     width: 1024px;
   }
@@ -205,7 +211,7 @@ a:hover {
 /*
  * Masthead for nav
  */
-/* line 259, ../sass/blog.scss */
+/* line 266, ../sass/blog.scss */
 .blog-masthead {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -213,7 +219,7 @@ a:hover {
 }
 
 /* Nav links */
-/* line 265, ../sass/blog.scss */
+/* line 272, ../sass/blog.scss */
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -222,7 +228,7 @@ a:hover {
   color: #cdddeb;
 }
 
-/* line 272, ../sass/blog.scss */
+/* line 279, ../sass/blog.scss */
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -230,12 +236,12 @@ a:hover {
 }
 
 /* Active state gets a caret at the bottom */
-/* line 279, ../sass/blog.scss */
+/* line 286, ../sass/blog.scss */
 .blog-nav .active {
   color: #f5f5f5;
 }
 
-/* line 282, ../sass/blog.scss */
+/* line 289, ../sass/blog.scss */
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -250,7 +256,7 @@ a:hover {
   border-left: 5px solid transparent;
 }
 @media screen and (max-width: 900px) {
-  /* line 282, ../sass/blog.scss */
+  /* line 289, ../sass/blog.scss */
   .blog-nav .active:after {
     display: none;
   }
@@ -259,13 +265,13 @@ a:hover {
 /*
  * Blog name and description
  */
-/* line 304, ../sass/blog.scss */
+/* line 311, ../sass/blog.scss */
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 308, ../sass/blog.scss */
+/* line 315, ../sass/blog.scss */
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -273,19 +279,19 @@ a:hover {
   font-weight: normal;
 }
 
-/* line 314, ../sass/blog.scss */
+/* line 321, ../sass/blog.scss */
 .blog-description {
   font-size: 20px;
   color: #999;
 }
 @media screen and (max-width: 900px) {
-  /* line 314, ../sass/blog.scss */
+  /* line 321, ../sass/blog.scss */
   .blog-description {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 314, ../sass/blog.scss */
+  /* line 321, ../sass/blog.scss */
   .blog-description {
     font-size: 16px;
   }
@@ -294,39 +300,39 @@ a:hover {
 /*
  * Main column and sidebar layout
  */
-/* line 324, ../sass/blog.scss */
+/* line 331, ../sass/blog.scss */
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
 @media screen and (max-width: 900px) {
-  /* line 324, ../sass/blog.scss */
+  /* line 331, ../sass/blog.scss */
   .blog-main {
     font-size: 16.2px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 324, ../sass/blog.scss */
+  /* line 331, ../sass/blog.scss */
   .blog-main {
     font-size: 14.4px;
   }
 }
 
 /* Sidebar modules for boxing content */
-/* line 330, ../sass/blog.scss */
+/* line 337, ../sass/blog.scss */
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
 }
 
-/* line 334, ../sass/blog.scss */
+/* line 341, ../sass/blog.scss */
 .sidebar-module-inset {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
 
-/* line 339, ../sass/blog.scss */
+/* line 346, ../sass/blog.scss */
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -334,13 +340,13 @@ a:hover {
 }
 
 /* Pagination */
-/* line 347, ../sass/blog.scss */
+/* line 354, ../sass/blog.scss */
 .pager {
   margin-bottom: 60px;
   text-align: left;
 }
 
-/* line 351, ../sass/blog.scss */
+/* line 358, ../sass/blog.scss */
 .pager > li > a {
   width: 140px;
   padding: 10px 20px;
@@ -351,30 +357,30 @@ a:hover {
 /*
  * Blog posts
  */
-/* line 363, ../sass/blog.scss */
+/* line 370, ../sass/blog.scss */
 .blog-post {
   margin-bottom: 60px;
 }
 
-/* line 366, ../sass/blog.scss */
+/* line 373, ../sass/blog.scss */
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
 @media screen and (max-width: 900px) {
-  /* line 366, ../sass/blog.scss */
+  /* line 373, ../sass/blog.scss */
   .blog-post-title {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 366, ../sass/blog.scss */
+  /* line 373, ../sass/blog.scss */
   .blog-post-title {
     font-size: 32px;
   }
 }
 
-/* line 370, ../sass/blog.scss */
+/* line 377, ../sass/blog.scss */
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
@@ -383,7 +389,7 @@ a:hover {
 /*
  * Footer
  */
-/* line 380, ../sass/blog.scss */
+/* line 387, ../sass/blog.scss */
 .blog-footer {
   padding: 40px 0;
   color: #999;
@@ -392,7 +398,7 @@ a:hover {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 387, ../sass/blog.scss */
+/* line 394, ../sass/blog.scss */
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
