@@ -1,70 +1,6 @@
-/*
- * Imports
- */
-
 // @import "compass/reset"; // NOTE: This fucks up Bootstrap, call first.
-
-
-/*
- * Variables
- */
-
-// $font-stack: Georgia, "Times New Roman", Times, serif;
-// $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-stack: "Source Sans Pro", Arial, sans-serif;
-
-$width-medium: 900px;
-$width-small:  500px;
-
-$image-bg:       url("/assets/images/bg-1-1.png");
-$image-logo-1-1: url("/assets/images/logo-1-1.png");
-$image-logo-2-3: url("/assets/images/logo-2-3.png");
-$image-logo-1-2: url("/assets/images/logo-1-2.png");
-
-$color-bg-container: #eee;
-$color-bg-masthead:  #428bca;
-$color-bg-footer:    #f9f9f9;
-$color-bg-about:     #f5f5f5;
-$color-body:         #555;
-$color-heading:      #333;
-$color-description:  #999;
-$color-nav:          #cdddeb;
-$color-nav-hover:    #fff;
-$color-nav-caret:    $color-bg-about; // #fff;
-$color-border:       #e5e5e5;
-
-
-/*
- * Mixins
- */
-
-@mixin border($bottom: 0px, $top: 0px) {
-  border-bottom: $bottom solid $color-border;
-  border-top: $top solid $color-border;
-}
-
-@mixin box-shadow($inset: null, $x: 0, $y: -2px, $blur: 5px) {
-  -webkit-box-shadow: $inset $x $y $blur rgba(0,0,0,.1);
-          box-shadow: $inset $x $y $blur rgba(0,0,0,.1);
-}
-
-@mixin font-size($size, $medium: 0.9, $small: 0.8) {
-  font-size: $size;
-  @media screen and (max-width: $width-medium) {
-    font-size: $size * $medium
-  }
-  @media screen and (max-width: $width-small) {
-    font-size: $size * $small
-  }
-}
-
-@mixin transition($properties...) {
-  transition-property: $properties;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
-
+@import "mixins";
+@import "variables";
 
 /*
  * Globals
@@ -107,7 +43,6 @@ a:hover {
   text-decoration: none !important;
 }
 
-
 /*
  * Custom stuff
  */
@@ -137,6 +72,22 @@ a:hover {
   padding: 50px 30px 130px 30px;
 }
 
+.login a {
+  @include button;
+}
+
+.nav-button a {
+  @include button($v: 15px);
+  margin: 0;
+  padding: 15px !important;
+}
+
+.navbar-nav {
+  @media screen and (max-width: $width-medium) {
+    margin: 0;
+  }
+}
+
 // Fixed navbar
 .navbar {
   @include box-shadow($inset: inset);
@@ -159,6 +110,10 @@ a:hover {
   .container {
     background: $color-bg-masthead;
     box-shadow: none;
+  }
+
+  @media screen and (max-width: $width-medium) {
+    min-height: 45px;
   }
 }
 
@@ -189,6 +144,13 @@ a:hover {
   }
 }
 
+.nav-container {
+  @media screen and (max-width: $width-medium) {
+    // TODO: Responsive stuff be here.
+    padding: 0;
+  }
+}
+
 // Search
 .btn {
   background: darken($color-bg-about, 2.5%);
@@ -197,7 +159,6 @@ a:hover {
 .form-control {
   background: $color-bg-about;
 }
-
 
 /*
  * Original blog.scss stuff
@@ -246,7 +207,6 @@ a:hover {
   width: 100%;
 }
 
-
 /*
  * Override Bootstrap's default container.
  */
@@ -257,7 +217,6 @@ a:hover {
     width: 1024px;
   }
 }
-
 
 /*
  * Masthead for nav
@@ -276,6 +235,7 @@ a:hover {
   font-weight: 500;
   color: $color-nav;
 }
+
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: $color-nav-hover;
@@ -286,6 +246,7 @@ a:hover {
 .blog-nav .active {
   color: $color-nav-caret;
 }
+
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -303,7 +264,6 @@ a:hover {
   }
 }
 
-
 /*
  * Blog name and description
  */
@@ -311,18 +271,20 @@ a:hover {
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
+
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 60px;
   font-weight: normal;
 }
+
 .blog-description {
   @include font-size($size: 20px);
   color: $color-description;
 }
-
 
 /*
  * Main column and sidebar layout
@@ -338,30 +300,31 @@ a:hover {
   padding: 15px;
   margin: 0 -15px 15px;
 }
+
 .sidebar-module-inset {
   padding: 15px;
   background-color: $color-bg-about;
   border-radius: 4px;
 }
+
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
 }
 
-
 /* Pagination */
 .pager {
   margin-bottom: 60px;
   text-align: left;
 }
+
 .pager > li > a {
   width: 140px;
   padding: 10px 20px;
   text-align: center;
   border-radius: 30px;
 }
-
 
 /*
  * Blog posts
@@ -370,15 +333,16 @@ a:hover {
 .blog-post {
   margin-bottom: 60px;
 }
+
 .blog-post-title {
   margin-bottom: 5px;
   @include font-size($size: 40px);
 }
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: $color-description;
 }
-
 
 /*
  * Footer
@@ -391,6 +355,7 @@ a:hover {
   background-color: $color-bg-footer;
   border-top: 1px solid $color-border;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }

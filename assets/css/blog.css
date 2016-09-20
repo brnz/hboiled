@@ -1,7 +1,4 @@
 /*
- * Imports
- */
-/*
  * Variables
  */
 /*
@@ -10,13 +7,13 @@
 /*
  * Globals
  */
-/* line 73, ../sass/blog.scss */
+/* line 9, ../sass/blog.scss */
 html {
   min-height: 100vh;
   position: relative;
 }
 
-/* line 78, ../sass/blog.scss */
+/* line 14, ../sass/blog.scss */
 body {
   color: #555;
   background: url("/assets/images/bg-1-1.png");
@@ -24,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-/* line 90, ../sass/blog.scss */
+/* line 26, ../sass/blog.scss */
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -37,7 +34,7 @@ h6, .h6 {
   margin-top: 0;
 }
 
-/* line 102, ../sass/blog.scss */
+/* line 38, ../sass/blog.scss */
 a {
   transition-property: background, color;
   transition-duration: 0.3s;
@@ -45,7 +42,7 @@ a {
   transition-delay: 0s;
 }
 
-/* line 106, ../sass/blog.scss */
+/* line 42, ../sass/blog.scss */
 a:hover {
   text-decoration: none !important;
 }
@@ -53,14 +50,14 @@ a:hover {
 /*
  * Custom stuff
  */
-/* line 115, ../sass/blog.scss */
+/* line 50, ../sass/blog.scss */
 .blog-logo {
   background: url("/assets/images/logo-1-1.png");
   height: 140px;
   width: 480px;
 }
 @media screen and (max-width: 900px) {
-  /* line 115, ../sass/blog.scss */
+  /* line 50, ../sass/blog.scss */
   .blog-logo {
     background: url("/assets/images/logo-2-3.png");
     height: 92px;
@@ -68,7 +65,7 @@ a:hover {
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 115, ../sass/blog.scss */
+  /* line 50, ../sass/blog.scss */
   .blog-logo {
     background: url("/assets/images/logo-1-2.png");
     height: 70px;
@@ -76,7 +73,7 @@ a:hover {
   }
 }
 
-/* line 132, ../sass/blog.scss */
+/* line 67, ../sass/blog.scss */
 .full-height {
   -webkit-box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -85,7 +82,56 @@ a:hover {
   padding: 50px 30px 130px 30px;
 }
 
-/* line 141, ../sass/blog.scss */
+/* line 75, ../sass/blog.scss */
+.login a {
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  background: #4c91cd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 15px !important;
+}
+/* line 28, ../sass/mixins.scss */
+.login a:hover, .login a:focus {
+  background: #5697d0 !important;
+}
+/* line 33, ../sass/mixins.scss */
+.login a:active {
+  -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 7px 15px 3px !important;
+}
+
+/* line 79, ../sass/blog.scss */
+.nav-button a {
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  background: #4c91cd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px 15px !important;
+  margin: 0;
+  padding: 15px !important;
+}
+/* line 28, ../sass/mixins.scss */
+.nav-button a:hover, .nav-button a:focus {
+  background: #5697d0 !important;
+}
+/* line 33, ../sass/mixins.scss */
+.nav-button a:active {
+  -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 17px 15px 13px !important;
+}
+
+@media screen and (max-width: 900px) {
+  /* line 85, ../sass/blog.scss */
+  .navbar-nav {
+    margin: 0;
+  }
+}
+
+/* line 92, ../sass/blog.scss */
 .navbar {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -93,26 +139,32 @@ a:hover {
   border: none;
   font-weight: 500;
 }
-/* line 150, ../sass/blog.scss */
+/* line 101, ../sass/blog.scss */
 .navbar a {
   color: #cdddeb !important;
 }
-/* line 152, ../sass/blog.scss */
+/* line 103, ../sass/blog.scss */
 .navbar a:hover, .navbar a:focus {
   color: #fff !important;
 }
-/* line 159, ../sass/blog.scss */
+/* line 110, ../sass/blog.scss */
 .navbar .container {
   background: #428bca;
   box-shadow: none;
 }
+@media screen and (max-width: 900px) {
+  /* line 92, ../sass/blog.scss */
+  .navbar {
+    min-height: 45px;
+  }
+}
 
-/* line 165, ../sass/blog.scss */
+/* line 120, ../sass/blog.scss */
 .navbar-nav .active a {
   background: #4c91cd !important;
   color: #f5f5f5 !important;
 }
-/* line 168, ../sass/blog.scss */
+/* line 123, ../sass/blog.scss */
 .navbar-nav .active a:after {
   position: absolute;
   bottom: 0;
@@ -127,23 +179,30 @@ a:hover {
   border-left: 5px solid transparent;
 }
 @media screen and (max-width: 900px) {
-  /* line 168, ../sass/blog.scss */
+  /* line 123, ../sass/blog.scss */
   .navbar-nav .active a:after {
     display: none;
   }
 }
 
-/* line 187, ../sass/blog.scss */
+/* line 142, ../sass/blog.scss */
 .navbar * {
   border-color: #4c91cd !important;
 }
 
-/* line 193, ../sass/blog.scss */
+@media screen and (max-width: 900px) {
+  /* line 147, ../sass/blog.scss */
+  .nav-container {
+    padding: 0;
+  }
+}
+
+/* line 155, ../sass/blog.scss */
 .btn {
   background: #efefef;
 }
 
-/* line 197, ../sass/blog.scss */
+/* line 159, ../sass/blog.scss */
 .form-control {
   background: #f5f5f5;
 }
@@ -151,12 +210,12 @@ a:hover {
 /*
  * Original blog.scss stuff
  */
-/* line 208, ../sass/blog.scss */
+/* line 169, ../sass/blog.scss */
 .blog-masthead .container {
   background: #428bca;
 }
 
-/* line 217, ../sass/blog.scss */
+/* line 178, ../sass/blog.scss */
 .blog-description {
   border-bottom: 1px solid #e5e5e5;
   border-top: 0px solid #e5e5e5;
@@ -164,12 +223,12 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 223, ../sass/blog.scss */
+/* line 184, ../sass/blog.scss */
 .pager {
   text-align: center !important;
 }
 
-/* line 227, ../sass/blog.scss */
+/* line 188, ../sass/blog.scss */
 .blog-post {
   border-bottom: 1px solid #e5e5e5;
   border-top: 0px solid #e5e5e5;
@@ -177,19 +236,19 @@ a:hover {
   padding-bottom: 20px;
 }
 
-/* line 233, ../sass/blog.scss */
+/* line 194, ../sass/blog.scss */
 .sidebar-module {
   border-bottom: 1px solid #e5e5e5;
   border-top: 0px solid #e5e5e5;
 }
 
-/* line 237, ../sass/blog.scss */
+/* line 198, ../sass/blog.scss */
 .sidebar-module-inset {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 241, ../sass/blog.scss */
+/* line 202, ../sass/blog.scss */
 .blog-footer {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -203,7 +262,7 @@ a:hover {
  * Override Bootstrap's default container.
  */
 @media (min-width: 1200px) {
-  /* line 255, ../sass/blog.scss */
+  /* line 215, ../sass/blog.scss */
   .container {
     width: 1024px;
   }
@@ -211,7 +270,7 @@ a:hover {
 /*
  * Masthead for nav
  */
-/* line 266, ../sass/blog.scss */
+/* line 225, ../sass/blog.scss */
 .blog-masthead {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -219,7 +278,7 @@ a:hover {
 }
 
 /* Nav links */
-/* line 272, ../sass/blog.scss */
+/* line 231, ../sass/blog.scss */
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -228,7 +287,7 @@ a:hover {
   color: #cdddeb;
 }
 
-/* line 279, ../sass/blog.scss */
+/* line 239, ../sass/blog.scss */
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -236,12 +295,12 @@ a:hover {
 }
 
 /* Active state gets a caret at the bottom */
-/* line 286, ../sass/blog.scss */
+/* line 246, ../sass/blog.scss */
 .blog-nav .active {
   color: #f5f5f5;
 }
 
-/* line 289, ../sass/blog.scss */
+/* line 250, ../sass/blog.scss */
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -256,7 +315,7 @@ a:hover {
   border-left: 5px solid transparent;
 }
 @media screen and (max-width: 900px) {
-  /* line 289, ../sass/blog.scss */
+  /* line 250, ../sass/blog.scss */
   .blog-nav .active:after {
     display: none;
   }
@@ -265,13 +324,14 @@ a:hover {
 /*
  * Blog name and description
  */
-/* line 311, ../sass/blog.scss */
+/* line 271, ../sass/blog.scss */
 .blog-header {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
-/* line 315, ../sass/blog.scss */
+/* line 277, ../sass/blog.scss */
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
@@ -279,19 +339,19 @@ a:hover {
   font-weight: normal;
 }
 
-/* line 321, ../sass/blog.scss */
+/* line 284, ../sass/blog.scss */
 .blog-description {
   font-size: 20px;
   color: #999;
 }
 @media screen and (max-width: 900px) {
-  /* line 321, ../sass/blog.scss */
+  /* line 284, ../sass/blog.scss */
   .blog-description {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 321, ../sass/blog.scss */
+  /* line 284, ../sass/blog.scss */
   .blog-description {
     font-size: 16px;
   }
@@ -300,39 +360,39 @@ a:hover {
 /*
  * Main column and sidebar layout
  */
-/* line 331, ../sass/blog.scss */
+/* line 293, ../sass/blog.scss */
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
 @media screen and (max-width: 900px) {
-  /* line 331, ../sass/blog.scss */
+  /* line 293, ../sass/blog.scss */
   .blog-main {
     font-size: 16.2px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 331, ../sass/blog.scss */
+  /* line 293, ../sass/blog.scss */
   .blog-main {
     font-size: 14.4px;
   }
 }
 
 /* Sidebar modules for boxing content */
-/* line 337, ../sass/blog.scss */
+/* line 299, ../sass/blog.scss */
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
 }
 
-/* line 341, ../sass/blog.scss */
+/* line 304, ../sass/blog.scss */
 .sidebar-module-inset {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
 
-/* line 346, ../sass/blog.scss */
+/* line 310, ../sass/blog.scss */
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -340,13 +400,13 @@ a:hover {
 }
 
 /* Pagination */
-/* line 354, ../sass/blog.scss */
+/* line 317, ../sass/blog.scss */
 .pager {
   margin-bottom: 60px;
   text-align: left;
 }
 
-/* line 358, ../sass/blog.scss */
+/* line 322, ../sass/blog.scss */
 .pager > li > a {
   width: 140px;
   padding: 10px 20px;
@@ -357,30 +417,30 @@ a:hover {
 /*
  * Blog posts
  */
-/* line 370, ../sass/blog.scss */
+/* line 333, ../sass/blog.scss */
 .blog-post {
   margin-bottom: 60px;
 }
 
-/* line 373, ../sass/blog.scss */
+/* line 337, ../sass/blog.scss */
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
 @media screen and (max-width: 900px) {
-  /* line 373, ../sass/blog.scss */
+  /* line 337, ../sass/blog.scss */
   .blog-post-title {
     font-size: 36px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 373, ../sass/blog.scss */
+  /* line 337, ../sass/blog.scss */
   .blog-post-title {
     font-size: 32px;
   }
 }
 
-/* line 377, ../sass/blog.scss */
+/* line 342, ../sass/blog.scss */
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
@@ -389,7 +449,7 @@ a:hover {
 /*
  * Footer
  */
-/* line 387, ../sass/blog.scss */
+/* line 351, ../sass/blog.scss */
 .blog-footer {
   padding: 40px 0;
   color: #999;
@@ -398,7 +458,7 @@ a:hover {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 394, ../sass/blog.scss */
+/* line 359, ../sass/blog.scss */
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
