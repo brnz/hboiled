@@ -4,15 +4,14 @@
  * Mixins
  */
 
-
 @mixin border($bottom: 0px, $top: 0px) {
   border-bottom: $bottom solid $color-border;
   border-top: $top solid $color-border;
 }
 
 @mixin box-shadow($inset: null, $x: 0, $y: -2px, $blur: 5px) {
-  -webkit-box-shadow: $inset $x $y $blur rgba(0,0,0,.1);
-  box-shadow: $inset $x $y $blur rgba(0,0,0,.1);
+  -webkit-box-shadow: $inset $x $y $blur rgba(0, 0, 0, .1);
+  box-shadow: $inset $x $y $blur rgba(0, 0, 0, .1);
 }
 
 @mixin button($v: 5px) {
@@ -54,4 +53,3 @@
   transition-timing-function: ease;
   transition-delay: 0s;
 }
-
