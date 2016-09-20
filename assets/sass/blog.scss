@@ -80,6 +80,9 @@ a:hover {
   @include button($v: 15px);
   margin: 0;
   padding: 15px !important;
+  @media screen and (min-width: $width-medium) {
+    display: none !important;
+  }
 }
 
 .navbar-nav {
